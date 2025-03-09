@@ -1,0 +1,104 @@
+/*Conteneur principal */
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #9B6A5A;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/*robot */
+.homepage-image {
+    width: 18rem;
+    height: 18rem;
+    margin-bottom: 4rem;
+}
+
+/* responsive de l'image sur petits écrans */
+@media (max-width: 768px) {
+    .homepage-image {
+        width: 12rem;
+        height: 12rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/*Titre */
+.homepage-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    max-width: 90%;
+}
+
+/* reponsive du titre sur petits écrans */
+@media (max-width: 768px) {
+    .homepage-title {
+        font-size: 2rem;
+    }
+}
+
+/*Texte de description */
+.homepage-text {
+    color: black;
+    margin-top: 0.5rem;
+    max-width: 28rem;
+    font-size: 1.125rem;
+}
+
+/* responsive du texte sur mobile */
+@media (max-width: 768px) {
+    .homepage-text {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}
+
+/* Boutons  */
+.homepage-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2rem; 
+    justify-content: center;
+}
+
+/* Sur mobile pour les buttons*/
+@media (max-width: 768px) {
+    .homepage-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+/*Boutons */
+.homepage-button {
+    background-color: #E1C699;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #666;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 150px;
+    text-align: center;
+}
+
+/* Sur mobile pour les  boutons */
+@media (max-width: 768px) {
+    .homepage-button {
+        width: 80%;
+        min-width: auto;
+    }
+}
+
+/*hover button */
+.homepage-button:hover {
+    background-color: #D9B687;
+}

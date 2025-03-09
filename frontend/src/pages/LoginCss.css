@@ -1,0 +1,271 @@
+/* Conteneur principal */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #9B6A5A;
+    margin: 0;
+    padding: 0;
+}
+
+/* logo et titre */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+#url-to-signup:hover{
+    cursor: pointer;
+}
+
+#logo-login-page {
+    width: 200px;
+    height: 60px;
+}
+
+#logo-login-page:hover{
+    width: 202px;
+    height: 62px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#text-error{
+    color: red;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+    display: none;
+}
+ 
+#incorrect-password{
+    color: red;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+    display: none;
+}
+
+.logo-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* la boite */
+.login-box {
+    background-color: #C18672;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* les titres et les textes */
+.login-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.login-text {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/*les champs*/
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    padding: 0px 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+    box-sizing: border-box; 
+}
+
+.icon {
+    font-size: 16px;
+    color: gray;
+    margin-right: 8px;
+}
+
+.login-input {
+    color: black;
+    border: none;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+/* mdp oublié  */
+.forgot-password {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.forgot-password a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* check box */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 14px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.checkbox-group input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+}
+
+/* Button me connecter */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #E1C699;
+    color: #333;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #D9B687;
+}
+
+/* pour s'inscrire */
+.register-link {
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.register-link a {
+    text-decoration: underline;
+}
+
+/* Responsive */
+
+/* tablette et ecran moyen*/
+@media (max-width: 768px) {
+    .login-box {
+        width: 85%;
+        padding: 1.5rem;
+    }
+
+    .logo {
+        width: 80px;
+        height: 50px;
+    }
+
+    .logo-title {
+        font-size: 20px;
+    }
+
+    .input-group {
+        padding: 6px 10px;
+    }
+
+    .login-button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/*  pour les mobiles */
+@media (max-width: 480px) {
+    .login-box {
+        width: 90%;
+        padding: 1.2rem;
+    }
+
+    .header {
+        top: 15px;
+        left: 20px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 45px;
+    }
+
+    .logo-title {
+        font-size: 18px;
+    }
+
+    .login-title {
+        font-size: 1.5rem;
+    }
+
+    .login-text {
+        font-size: 14px;
+    }
+
+    .input-group {
+        padding: 6px 10px;
+    }
+
+    .forgot-password {
+        font-size: 13px;
+    }
+
+    .checkbox-group {
+        font-size: 13px;
+    }
+
+    .login-button {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .register-link {
+        font-size: 12px;
+    }
+}

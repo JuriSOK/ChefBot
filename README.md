@@ -34,3 +34,11 @@ ChefBot est un **assistant de cuisine intelligent** sous forme de chatbot, conç
 ```bash
 git clone https://github.com/ton-username/ChefBot.git
 cd ChefBot
+
+### 2. Lancer le backend
+
+```bash
+cd backend
+cd src
+python3 main.py
+

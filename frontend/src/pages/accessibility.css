@@ -1,0 +1,45 @@
+/* Mode contraste élevé */
+.high-contrast {
+    filter: invert(1) hue-rotate(180deg);
+  }
+  
+  /* Police OpenDyslexic */
+  @font-face {
+  font-family: 'OpenDyslexic';
+  src: url('/fonts/OpenDyslexic-Regular.otf') format('opentype');
+}
+
+
+  
+  .dyslexic-font {
+    font-family: 'OpenDyslexic', sans-serif ;
+  }
+  .accessibility-tools {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body.dyslexic-mode {
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+  }
+  
+  
+  .accessibility-tools button {
+    padding: 8px 12px;
+    background-color: #f0d89c;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .accessibility-tools button:hover {
+    background-color: #eac177;
+  }
+  

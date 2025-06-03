@@ -1,5 +1,4 @@
-/* Conteneur principal */
-
+/* Fond global */
 .login-container {
     display: flex;
     flex-direction: column;
@@ -7,111 +6,77 @@
     justify-content: center;
     min-height: 100vh;
     width: 100vw;
-    background-color: #9B6A5A;
+    background: linear-gradient(to right, #fef5eb, #e7d1bd);
     margin: 0;
     padding: 0;
-}
-
-/* logo et titre */
-.header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    position: relative;
+  }
+  
+  /* Header/logo */
+  .header {
     position: absolute;
     top: 30px;
     left: 50px;
-}
-
-#url-to-signup:hover{
+  }
+  
+  #logo-login-page {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  #logo-login-page:hover {
+    transform: scale(1.05);
     cursor: pointer;
-}
-
-#logo-login-page {
-    width: 200px;
-    height: 60px;
-}
-
-#logo-login-page:hover{
-    width: 202px;
-    height: 62px;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#text-error{
-    color: red;
-    text-align: left;
-    font-size: 13px;
-    font-weight: bold;
-    margin-top: 0;
-    padding-top: 0;
-    display: none;
-}
- 
-#incorrect-password{
-    color: red;
-    text-align: left;
-    font-size: 13px;
-    font-weight: bold;
-    margin-top: 0;
-    padding-top: 0;
-    display: none;
-}
-
-.logo-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-}
-
-/* la boite */
-.login-box {
-    background-color: #C18672;
+  }
+  
+  /* Boîte de connexion */
+  .login-box {
+    background-color: #fff9f5;
     padding: 2rem;
-    border-radius: 10px;
-    border: 1px solid white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 400px;
-    max-width: 90%; 
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 90%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-/* les titres et les textes */
-.login-title {
-    font-size: 1.8rem;
+  }
+  
+  /* Titre et sous-titre */
+  .login-title {
+    font-size: 1.9rem;
     font-weight: bold;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.login-text {
-    color: white;
-    margin-bottom: 20px;
-}
-
-/*les champs*/
-.input-group {
+    color: #703c2c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .login-text {
+    color: #7b5b4d;
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Champs de formulaire */
+  .input-group {
     display: flex;
     align-items: center;
     background-color: white;
     border-radius: 8px;
     width: 100%;
-    padding: 0px 6px;
+    padding: 5px 10px;
     border: 1px solid #ccc;
     margin-bottom: 12px;
-    box-sizing: border-box; 
-}
-
-.icon {
+  }
+  
+  .icon {
     font-size: 16px;
     color: gray;
     margin-right: 8px;
-}
-
-.login-input {
+  }
+  
+  .login-input {
     color: black;
     border: none;
     width: 100%;
@@ -119,153 +84,109 @@
     background-color: transparent;
     font-size: 16px;
     padding: 10px;
-    box-sizing: border-box; 
-}
-
-/* mdp oublié  */
-.forgot-password {
-    text-align: left;
+  }
+  
+  /* MDP oublié */
+  .forgot-password {
     width: 100%;
+    text-align: right;
     margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.forgot-password a {
-    color: white;
+    font-size: 13px;
+  }
+  
+  .forgot-password a {
+    color: #703c2c;
     text-decoration: underline;
-}
-
-/* check box */
-.checkbox-group {
+    cursor: pointer;
+  }
+  
+  /* Checkbox */
+  .checkbox-group {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: white;
+    color: #333;
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 13px;
     width: 100%;
-    white-space: nowrap;
-}
-
-.checkbox-group input {
+    text-align: left;
+  }
+  
+  .checkbox-group input {
     width: 16px;
     height: 16px;
-    margin: 0;
     flex-shrink: 0;
-}
-
-.checkbox-group label {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    flex-grow: 1;
-}
-
-/* Button me connecter */
-.login-button {
+  }
+  
+  /* Bouton */
+  .login-button {
     width: 100%;
     padding: 12px;
-    background-color: #E1C699;
+    background: linear-gradient(to right, #e1c699, #d9b687);
     color: #333;
     font-weight: bold;
     border-radius: 8px;
     border: none;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.login-button:hover {
-    background-color: #D9B687;
-}
-
-/* pour s'inscrire */
-.register-link {
-    color: white;
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.register-link a {
+    transition: 0.3s;
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(to right, #e7cfa8, #e2ba8d);
+  }
+  
+  /* Lien d'inscription */
+  .register-link {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #333;
+  }
+  
+  .register-link a {
+    color: #375cb4;
+    cursor: pointer;
     text-decoration: underline;
-}
-
-/* Responsive */
-
-/* tablette et ecran moyen*/
-@media (max-width: 768px) {
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
     .login-box {
-        width: 85%;
-        padding: 1.5rem;
+      width: 85%;
+      padding: 1.5rem;
     }
-
-    .logo {
-        width: 80px;
-        height: 50px;
-    }
-
-    .logo-title {
-        font-size: 20px;
-    }
-
-    .input-group {
-        padding: 6px 10px;
-    }
-
-    .login-button {
-        padding: 12px;
-        font-size: 14px;
-    }
-}
-
-/*  pour les mobiles */
-@media (max-width: 480px) {
-    .login-box {
-        width: 90%;
-        padding: 1.2rem;
-    }
-
+  
     .header {
-        top: 15px;
-        left: 20px;
+      top: 20px;
+      left: 20px;
     }
-
-    .logo {
-        width: 70px;
-        height: 45px;
+  
+    #logo-login-page {
+      width: 100px;
     }
-
-    .logo-title {
-        font-size: 18px;
+  }
+  
+  @media (max-width: 480px) {
+    .login-box {
+      width: 90%;
+      padding: 1.2rem;
     }
-
+  
     .login-title {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
-
+  
     .login-text {
-        font-size: 14px;
+      font-size: 13px;
     }
-
-    .input-group {
-        padding: 6px 10px;
-    }
-
-    .forgot-password {
-        font-size: 13px;
-    }
-
-    .checkbox-group {
-        font-size: 13px;
-    }
-
+  
     .login-button {
-        padding: 14px;
-        font-size: 14px;
+      padding: 14px;
+      font-size: 14px;
     }
-
+  
     .register-link {
-        font-size: 12px;
+      font-size: 12px;
     }
-}
+  }
+  

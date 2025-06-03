@@ -1,0 +1,94 @@
+/*Conteneur principal */
+.termsofuse-container {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom right, #fdf6ee, #eacbbf);
+    padding: 2rem;
+    margin: 0;
+    padding-bottom: 60px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.termsofuse-image {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.termsofuse-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#grand-titre {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    color: #7c3a24;
+    margin-top: 20px;
+}
+
+#publication {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+#termsOfUse {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+#content {
+    width: 60%;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#content h3 {
+    color: #7c3a24;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#content p, #content li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+@media (max-width: 1036px) {
+    #content {
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    #content {
+        width: 90%;
+    }
+
+    #grand-titre {
+        font-size: 28px;
+    }
+
+    #publication {
+        font-size: 14px;
+    }
+}

@@ -40,3 +40,25 @@
 .read-the-docs {
   color: #888;
 }
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("/fonts/OpenDyslexic-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body.dyslexic-font {
+  font-family: "OpenDyslexic", Arial, sans-serif;
+}
+body.high-contrast {
+  background-color: black !important;
+  color: yellow !important;
+}
+
+body.high-contrast input,
+body.high-contrast select,
+body.high-contrast textarea {
+  background-color: black !important;
+  color: yellow !important;
+  border: 1px solid yellow !important;
+}
